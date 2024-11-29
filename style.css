@@ -1,0 +1,257 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    font-family: Arial, sans-serif;
+    color: #BFBFBF;
+}
+
+.navbar{
+    background-color: #1F2933;
+    color: #BFBFBF;
+    padding: 1rem 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 55rem;
+}
+
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .nav a{
+    color: #BFBFBF;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.navbar .nav a:hover{
+    background-color: #E63946;
+    border-radius: 7px;
+}
+
+/* Home Section */
+
+section{
+    background-color: #1F2933;
+    height: auto;
+    padding: 0.5rem 1.5rem;
+    margin: 1rem 0.5rem;
+}
+
+.home-sec{
+    display: flex;
+    gap: 1.5rem;
+    background-color: #1F2933;
+}
+
+.home-sec .outter-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 0.5rem 1.5rem;
+}
+
+.home-sec button{
+    width: auto;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #2A9D8F;
+    margin-left: 31px;
+    color: #BFBFBF;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.home-sec button:hover{
+    background-color: #E63946;
+}
+
+/* Skills Section */
+.skills-sec h2{
+    text-align: center;
+    color: rgb(230, 57, 70);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1.5rem;
+
+}
+
+.skills-list .skill-card{
+    background-color: #121212;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: 3px 4px 5px rgb(230, 57, 70, 0.6);
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card img{
+    max-width: 80px;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.skill-card p{
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+
+.skill-card:hover{
+    transform: translateY(-11px);
+    box-shadow: 0 8px 15px rgba(230, 57, 70, 0.6);
+}
+
+/* Services */
+
+
+/* Contact me */
+
+.contact-sec{
+    padding: 1.5rem;
+}
+
+.contact-sec h2{
+    text-align: center;
+    color: rgb(230, 57, 70);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgb(230, 57, 70);
+    border-radius: 5px;
+    background: #BFBFBF;
+}
+
+form button {
+    padding: 0.8rem;
+    background: #2A9D8F;
+    color: #BFBFBF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: rgb(230, 57, 70);
+}
+
+/* Projects List */
+.project-sec{
+   text-align: center;
+   text-decoration: none;
+   color: #BFBFBF;
+   padding: 1.5rem;
+   overflow-x: hidden;
+}
+
+
+.project-sec h1{
+    color: #E63946;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.project-sec .scroll{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    padding: 1.5rem;
+}
+
+.scroll div{
+    box-shadow: 3px 4px 7px rgba(230, 57, 70, 0.6);
+}
+
+.scroll .pro-cards{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #121212;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+}
+
+.pro-cards:hover{
+    background-color: #885357;
+}
+.pro-cards img{
+    max-width: 150px;
+    max-height: 100px;
+    margin: 0 auto 1.5rem;
+}
+
+.pro-cards h3{
+    color: #BFBFBF;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pro-cards p{
+    color: #BFBFBF;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+}
+
+footer {
+    background: #1F2933;
+    color: #BFBFBF;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
